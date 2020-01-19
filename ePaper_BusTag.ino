@@ -28,10 +28,8 @@ GxEPD_Class display(io, ELINK_RESET, ELINK_BUSY);
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-//const char* ssid = "VodafoneAP";
-//const char* password = "alberto97";
-const char* ssid = "TIM-30449287";
-const char* password = "pd0Yrl4CiwkrLk0EIfmqexxv";
+const char* ssid = "";
+const char* password = "";
 
 HTTPClient client;
 
@@ -73,6 +71,7 @@ void setup()
   printBusLine("59","SOLFERINO",82,stop_2622);
   printBusLine("VE1","MASSAUA",104,stop_1842);
   printBusLine("VE1","VENARIA",126,stop_1841);
+  PowerOff();
 }
 void loop(){}
 
